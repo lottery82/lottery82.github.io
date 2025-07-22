@@ -1,101 +1,54 @@
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #f9f9f9;
+  margin: 0;
+  background-color: #f9f9f9;
   color: #333;
+  line-height: 1.6;
 }
 
-/* Container */
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 1rem 0;
-}
-
-/* Header */
 header {
-  background: #2c3e50;
+  background: #4a148c;
   color: #fff;
-}
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-}
-nav li {
-  margin-left: 1rem;
-}
-nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 0.5rem;
-  transition: background 0.3s;
-}
-nav a:hover {
-  background: #34495e;
-  border-radius: 4px;
+  padding: 20px 10px;
+  text-align: center;
 }
 
-/* Hero Section */
-.hero {
-  background: #e74c3c;
-  color: #fff;
-  text-align: center;
-  padding: 3rem 1rem;
-  margin: 2rem 0;
-}
-.hero .btn {
+.container {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 0 20px;
   background: #fff;
-  color: #e74c3c;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  display: inline-block;
-  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+h1, h2, h3 {
+  color: #4a148c;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+.highlight {
+  background: #f3e5f5;
+  padding: 15px;
+  border-left: 5px solid #7b1fa2;
+  margin: 20px 0;
   border-radius: 4px;
-  transition: background 0.3s;
-}
-.hero .btn:hover {
-  background: #f2f2f2;
+  font-weight: bold;
 }
 
-/* Sections */
-section {
-  margin-bottom: 2rem;
-}
-section h2 {
-  margin-bottom: 1rem;
-  color: #2c3e50;
-}
-.features ul {
-  list-style: disc;
-  margin-left: 1.5rem;
-}
-
-/* Contact & Footer */
 footer {
-  background: #2c3e50;
+  background: #4a148c;
   color: #fff;
   text-align: center;
-  padding: 1rem 0;
+  padding: 15px 10px;
+  margin-top: 40px;
 }
-footer p {
-  font-size: 0.9rem;
-}
-.btn {
-  text-decoration: none;
-  display: inline-block;
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
 }
