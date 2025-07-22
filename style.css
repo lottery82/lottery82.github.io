@@ -1,108 +1,101 @@
-/* Reset and base */
+/* Global Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
   background: #f9f9f9;
   color: #333;
-  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 0;
 }
 
 /* Header */
 header {
-  background: #4a148c;
-  color: white;
+  background: #2c3e50;
+  color: #fff;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem 0;
-  text-align: center;
 }
-
-/* Navigation */
-nav {
-  background: #6a1b9a;
-  padding: 0.5rem;
-  text-align: center;
+nav ul {
+  list-style: none;
+  display: flex;
 }
-
+nav li {
+  margin-left: 1rem;
+}
 nav a {
   color: #fff;
   text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
+  padding: 0.5rem;
+  transition: background 0.3s;
 }
-
 nav a:hover {
-  text-decoration: underline;
-}
-
-/* Main content container */
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 2rem;
+  background: #34495e;
+  border-radius: 4px;
 }
 
 /* Hero Section */
 .hero {
-  background: #e1bee7;
-  padding: 2rem;
-  border-radius: 10px;
+  background: #e74c3c;
+  color: #fff;
   text-align: center;
+  padding: 3rem 1rem;
+  margin: 2rem 0;
 }
-
-.hero h1 {
-  font-size: 2.5rem;
-  color: #4a148c;
-}
-
-.hero p {
-  font-size: 1.2rem;
+.hero .btn {
+  background: #fff;
+  color: #e74c3c;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
   margin-top: 1rem;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+.hero .btn:hover {
+  background: #f2f2f2;
 }
 
 /* Sections */
 section {
-  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
-
 section h2 {
-  color: #6a1b9a;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+.features ul {
+  list-style: disc;
+  margin-left: 1.5rem;
 }
 
-section p a {
-  color: #4a148c;
-  text-decoration: none;
-}
-
-section p a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
+/* Contact & Footer */
 footer {
-  background: #4a148c;
-  color: white;
+  background: #2c3e50;
+  color: #fff;
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  padding: 1rem 0;
 }
-
-/* Responsive Design */
-@media (max-width: 600px) {
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
+footer p {
+  font-size: 0.9rem;
+}
+.btn {
+  text-decoration: none;
+  display: inline-block;
 }
